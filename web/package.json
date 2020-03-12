@@ -28,7 +28,7 @@
     "react-dom": "^16.8.4",
     "react-router": "4.3.1",
     "react-router-dom": "4.3.1",
-    "react-select": "^2.1.2",
+    "react-select": "^3.0.0",
     "styled-components": "4.1.2",
     "styled-system": "^3.1.11",
     "u2f-api-polyfill": "^0.4.3",
