@@ -9,7 +9,9 @@
     "build": "rm -rf ./dist; mkdir ./dist; node node_modules/webpack/bin/webpack.js --progress --config webpack/webpack.prod.config.js --bail",
     "lint": "node node_modules/eslint/bin/eslint src/**/*.*",
     "test": "jest",
-    "tdd": "jest . --watch"
+    "tdd": "jest . --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "",
@@ -19,7 +21,7 @@
     "create-react-class": "^15.6.3",
     "es6-shim": "^0.35.1",
     "ip-subnet-calculator": "^1.1.8",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "lodash": "^4.17.15",
     "moment": "^2.22.1",
     "nuclear-js": "1.4.0",
@@ -32,7 +34,8 @@
     "styled-components": "4.1.2",
     "styled-system": "^3.1.11",
     "u2f-api-polyfill": "^0.4.3",
-    "xterm": "https://github.com/gravitational/xterm.js#v2.4.0"
+    "xterm": "https://github.com/gravitational/xterm.js#v2.4.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -81,5 +84,6 @@
       "shared/(.*)$": "<rootDir>/src/shared/$1",
       "^app/(.*)$": "<rootDir>/src/$1"
     }
-  }
+  },
+  "snyk": true
 }
