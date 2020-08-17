@@ -20,7 +20,7 @@
     "es6-shim": "^0.35.1",
     "ip-subnet-calculator": "^1.1.8",
     "jquery": "3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "moment": "^2.22.1",
     "nuclear-js": "1.4.0",
     "react": "^16.8.4",
